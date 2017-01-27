@@ -5,7 +5,6 @@ class CataloguesController < ApplicationController
 
   def show
     @catalogue = Catalogue.find(params[:id])
-    raise
-    @voitures = Voiture.all.where()
+    @voitures = Voiture.all.where(catalogue: params[:id])
   end
 end

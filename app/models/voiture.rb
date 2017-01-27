@@ -1,3 +1,3 @@
 class Voiture < ApplicationRecord
-  belongs_to :catalogue, uniqueness: true
+  belongs_to :catalogue
 end

@@ -2,6 +2,10 @@
 
 <ul>
   <% @voitures.each do |voiture| %>
-  <li><%= voiture %></li>
+  <li><%= voiture.nom %></li>
   <% end %>
 </ul>
+
+<hr>
+
+<%= link_to "Ajouter une voiture" , new_catalogue_voiture_path(@catalogue) %>

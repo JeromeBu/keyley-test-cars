@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  root to: 'pages#home'
+  root to: 'catalogues#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 resources :catalogues do
-  resources :voitures
+  resources :voitures , only: [:new, :index, :create, :edit, :update]
 end
 
 end

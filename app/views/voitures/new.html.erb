@@ -1,0 +1,21 @@
+<h3>New car</h3>
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-6 col-xs-offset-3">
+    <%= simple_form_for [@catalogue, @voiture] do |f| %>
+    <%= f.input :nom %>
+    <%= f.input :code %>
+    <%= f.input :description %>
+    <%= f.input :tarif %>
+    <%= f.input :poids %>
+    <%= f.input :catalogue, :as => :hidden, :input_html => { :value => @catalogue } %>
+    <%= f.submit "add a car", class: "btn btn-primary" %>
+    <% end %>
+    </div>
+
+  </div>
+</div>
+
