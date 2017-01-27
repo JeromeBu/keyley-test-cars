@@ -1,0 +1,8 @@
+<h3>Liste des catalogues</h3>
+
+<ul>
+  <% @catalogues.each do |catalogue| %>
+  <li><%= link_to catalogue.nom , catalogue_path(catalogue) %></li>
+  <% end %>
+</ul>
+

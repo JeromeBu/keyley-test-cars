@@ -1,0 +1,9 @@
+<h3> <%= @catalogue.nom %></h3>
+
+<% @voitures.each do |voiture| %>
+  <li><%= voiture %></li>
+<% end %>
+
+<hr>
+
+<%= link_to "Retour à tous les catalogues" , catalogues_path %>
